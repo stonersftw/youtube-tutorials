@@ -10,8 +10,8 @@ export default function SignIn() {
   const handleCustomLogin = async () => {
     await authenticate({
       provider: "web3Auth",
-      clientId: "BK-eqYFyZrRWo7oWRKSw0dHF9WK2ywA2g1duDY7W38iTJlv7jQjGiUVWXmSe9X710wjbv9CUVoSq2dOTzJiiY5A",
-      chainId: Moralis.Chains.ETH_MAINNET,
+      clientId: "BK-BOZz5jgHzy_vGLw73f60oR7dhh5jIjfqtli1a6G3XaM4rmo3W5uPe8xIfC4olMnDBvd6BgsmETn4rc7dlnOQLjo",
+      chainId: Moralis.Chains.SOLANA,
       loginMethodsOrder: [
         "discord", 
         "email_passwordless"
