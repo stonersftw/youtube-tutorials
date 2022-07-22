@@ -32,7 +32,7 @@ export const SignOut = () => {
 
   return (
     <div className={signOutStyle.signOutCard}>
-      <h4>Welcome To Moralis x Web3Auth!</h4>
+      <h4>Welcome To Stoners!</h4>
       <button className={`${signOutStyle.refresh}`} onClick={fetchBalance}>
         Refresh
       </button>
