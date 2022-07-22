@@ -12,6 +12,10 @@ export default function SignIn() {
       provider: "web3Auth",
       clientId: "BK-eqYFyZrRWo7oWRKSw0dHF9WK2ywA2g1duDY7W38iTJlv7jQjGiUVWXmSe9X710wjbv9CUVoSq2dOTzJiiY5A",
       chainId: Moralis.Chains.ETH_MAINNET,
+      loginMethodsOrder: [
+        "discord", 
+        "email_passwordless"
+      ],
     });
   };
 
