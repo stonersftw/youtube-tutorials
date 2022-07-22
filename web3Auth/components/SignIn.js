@@ -10,7 +10,7 @@ export default function SignIn() {
   const handleCustomLogin = async () => {
     await authenticate({
       provider: "web3Auth",
-      clientId: "BOZz5jgHzy_vGLw73f60oR7dhh5jIjfqtli1a6G3XaM4rmo3W5uPe8xIfC4olMnDBvd6BgsmETn4rc7dlnOQLjo",
+      clientId: "BK-eqYFyZrRWo7oWRKSw0dHF9WK2ywA2g1duDY7W38iTJlv7jQjGiUVWXmSe9X710wjbv9CUVoSq2dOTzJiiY5A",
       chainId: Moralis.Chains.ETH_ROPSTEN,
     });
   };
@@ -24,7 +24,7 @@ export default function SignIn() {
       )}
       <div className={styles.buttonCard}>
         <button className={styles.loginButton} onClick={handleCustomLogin}>
-          Login with Web3Auth
+          Login
         </button>
       </div>
     </div>
