@@ -10,7 +10,7 @@ export default function SignIn() {
   const handleCustomLogin = async () => {
     await authenticate({
       provider: "web3Auth",
-      clientId: "",
+      clientId: "BErnBGq0_LjBum3I3AYMtIwPFdWGae5TFDYzXIY8ouuRkbcFIekC0tYmGTOeWr-qHcFF0fSIvcx6Xl20aowNIaQ",
       chainId: Moralis.Chains.ETH_ROPSTEN,
     });
   };
