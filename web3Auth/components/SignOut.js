@@ -8,7 +8,7 @@ export const SignOut = () => {
   const [balance, setBalance] = useState(0);
   const fetchBalance = async () => {
     try {
-      const options = { chain: Moralis.Chains.ETH_ROPSTEN };
+      const options = { chain: Moralis.Chains.SOLANA };
       const balance = await Moralis.Web3API.account.getNativeBalance(options);
       setBalance(balance.balance / 10 ** 18);
     } catch {}
@@ -20,7 +20,7 @@ export const SignOut = () => {
   const handleTransfer = async () => {
     try {
       await Moralis.transfer({
-        amount: Moralis.Units.ETH("0.1"),
+        amount: Moralis.Units.SOLANA("0.1"),
         receiver: "0x6922D436B9a52C247857c766967ca968AF459f10",
         type: "native",
       }).then((e) => {
